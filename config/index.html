@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/en',
+  remoteDataBaseUrl: 'https://sdg-university-demo.github.io/data/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -142,7 +142,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20260707122907">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20260707164013">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -179,9 +179,9 @@ layout-config-builder
     
 <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Πιλοτική έκδοση</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Αναπτυσσόμενη πρόταση για Παρατηρητήριο SDGs. Τα δεδομένα και οι δείκτες είναι ενδεικτικά και υπό επεξεργασία. Η παρούσα έκδοση δεν αποτελεί επίσημο ιστοχώρο του ιδρύματος.
     
   </div>
 </div>
@@ -200,17 +200,17 @@ layout-config-builder
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/site/">Home</a>
+    <a class="nav-link" href="/site/">Αρχική</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/goals">Goals</a>
+    <a class="nav-link" href="/site/goals">Στόχοι SDGs</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/reporting-status">Reporting Status</a>
+    <a class="nav-link" href="/site/reporting-status">Κατάσταση δεικτών</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/news">Updates</a>
+    <a class="nav-link" href="/site/news">Νέα</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/faq">FAQ</a>
+    <a class="nav-link" href="/site/faq">Συχνές ερωτήσεις</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/about">About us</a>
+    <a class="nav-link" href="/site/about">Σχετικά</a>
 </li></ul>
     
                 </div>
@@ -228,37 +228,7 @@ layout-config-builder
 </form>
 
                 </div>
-                <div class="header-toggles d-flex">
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown  dropdown">
-    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa fa-globe"></i>
-      English
-    </button>
-    <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/site/es/config/">
-              Español
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
-    <i class="fa fa-globe language-toggle-globe-links"></i>
-    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-es list-inline-item">
-            <a class="language-toggle-link" href="/site/es/config/">
-                Español
-            </a>
-        </li></ul>
-</div></span><a title="Enable high contrast" aria-label="Enable high contrast"
+                <div class="header-toggles d-flex"><a title="Enable high contrast" aria-label="Enable high contrast"
     data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -290,7 +260,7 @@ data-event-label="high"
       githubProxyUrl: null,
       githubRepo: null,
       githubOwner: null,
-      repositoryLink: "/tree/develop/_data",
+      repositoryLink: "https://github.com/sdg-university-demo/site/tree/develop/_data",
       configType: "site",
     };
     
@@ -2915,13 +2885,13 @@ data-event-label="high"
     ]
 }
 ;
-      opensdg.configForm.initialData = {"analytics":{"ua":"","gtag":"","gtm":"","ga_prod":""},"breadcrumbs":{"goal":[{"path":"/","label":"general.home"},{"path":"/goals","label":"general.goals"}],"indicator":[{"path":"/","label":"general.home"},{"path":"/goals","label":"general.goals"}],"post":[{"path":"/","label":"general.home"},{"path":"/news","label":"menu.updates"}]},"config_form_library_src":"https://open-sdg.org/open-sdg-config-form/2.4.0/bundle.js","cookie_consent_form":{"enabled":false},"country":{"name":"Australia","adjective":"Australian"},"create_goals":{"previous_next_links":false,"goals":[]},"create_indicators":{"previous_next_links":false},"create_pages":[{"filename":"","folder":"/goals","layout":"goals","title":"general.goals"},{"filename":"","folder":"/reporting-status","layout":"reportingstatus","title":"status.reporting_status"},{"filename":"","folder":"/search","layout":"search","title":"search.search"}],"custom_css":[],"custom_js":["/assets/js/custom.js"],"data_edit_url":"data","data_fields":{"units":"","series":""},"date_formats":[],"disclaimer":{"phase":"","message":"","hidden":false},"email_contacts":{"questions":"test@example.com","suggestions":"test@example.com","functional":"test@example.com"},"empty_metadata_placeholder":"","empty_metadata_placeholder_sources":"","environment":"staging","footer_language_toggle":"none","footer_menu":[{"path":"/contact-us","translation_key":"menu.contact_us"},{"path":"https://twitter.com/MyTwitterAccount","translation_key":"general.twitter"},{"path":"https://facebook.com/MyFacebookAccount","translation_key":"general.facebook"},{"path":"/about/cookies-and-privacy/","translation_key":"menu.cookies"}],"frontpage_cards":[{"title":"frontpage.download_all","content":"","include":"components/download-all-data.html","button_label":"","button_link":"","rule_color":""},{"title":"Lorem ipsum","content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis\ncursus est sed dapibus.\n","include":"","button_label":"Read more","button_link":"https://example.com","rule_color":""},{"title":"Nam vestibulum","content":"Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a\ninterdum risus enim vitae tortor. Donec feugiat accumsan rutrum.\n","include":"","button_label":"Read more","button_link":"https://example.com","rule_color":""}],"frontpage_goals_grid":{"title":"frontpage.heading_short","description":"frontpage.instructions_shorter"},"frontpage_introduction_banner":{"title":"frontpage.intro_title","description":"frontpage.intro_body"},"goal_image_base":"https://open-sdg.org/sdg-translations/assets/img/goals","goal_image_extension":"","goals_page":{"title":"general.goals","description":"frontpage.instructions_shorter"},"graph_color_headline":"#004466","graph_color_headline_high_contrast":"#55a6e5","graph_color_list":[],"graph_color_number":0,"graph_color_set":"accessible","graph_title_from_series":false,"header_language_toggle":"dropdown","hide_empty_metadata":true,"hide_single_series":true,"hide_single_unit":true,"ignored_disaggregations":[],"indicator_config_form":{"enabled":true,"dropdowns":[],"repository_link":"/tree/develop/indicator-config","translation_link":""},"indicator_data_form":{"enabled":true,"repository_link":"/tree/develop/data"},"indicator_metadata_form":{"enabled":true,"dropdowns":[],"repository_link":"/tree/develop/meta","translation_link":"","language":"","scopes":["national","global"],"exclude_fields":[],"translated":false},"indicator_tabs":{"tab_1":"","tab_2":"","tab_3":"","tab_4":""},"languages":["en","es"],"languages_numbers":[],"languages_public":[],"logos":[],"map_layers":[],"map_options":{"disaggregation_controls":false,"minZoom":5,"maxZoom":10,"tileURL":"","tileOptions":{"id":"","accessToken":"","attribution":""},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":""}},"menu":[{"path":"/","translation_key":"general.home","dropdown":[]},{"path":"/goals","translation_key":"general.goals","dropdown":[]},{"path":"/reporting-status","translation_key":"menu.reporting_status","dropdown":[]},{"path":"/news","translation_key":"menu.updates","dropdown":[]},{"path":"/faq","translation_key":"menu.faq","dropdown":[]},{"path":"/about","translation_key":"menu.about","dropdown":[]}],"meta_tags":[],"metadata_edit_url":"metadata","metadata_tabs":[{"scope":"national","title":"indicator.national_metadata","description":"indicator.national_metadata_blurb"},{"scope":"global","title":"indicator.global_metadata","description":"indicator.global_metadata_blurb"},{"scope":"sources","title":"indicator.sources","description":""}],"news":{"category_links":false},"observation_attributes":[],"progress_status":{"status_heading":"","status_types":[]},"progressive_web_app":{},"proxy_indicators":{},"remote_data_prefix":"https://open-sdg.org/open-sdg-data-starter","reporting_status":{"title":"status.reporting_status","description":"status.description","disaggregation_tabs":false,"status_types":[{"value":"complete","label":"status.reported_online","hide_on_goal_pages":false},{"value":"notstarted","label":"status.no_data_available","hide_on_goal_pages":false},{"value":"notapplicable","label":"status.not_applicable","hide_on_goal_pages":false}]},"repository_url_data":"https://github.com/open-sdg/open-sdg-data-starter","repository_url_site":"","search_index_boost":[],"search_index_extra_fields":[],"site_config_form":{"enabled":true,"dropdowns":[],"repository_link":"/tree/develop/_data","translation_link":""},"time_series_attributes":[{"field":"COMMENT_TS","label":"indicator.footnote"},{"field":"DATA_LAST_UPDATE","label":"metadata_fields.national_data_update_url"}],"x_axis_label":""};
+      opensdg.configForm.initialData = {"analytics":{"ua":"","gtag":"","gtm":"","ga_prod":""},"breadcrumbs":{"goal":[{"path":"/","label":"Αρχική"},{"path":"/goals","label":"Στόχοι SDGs"}],"indicator":[{"path":"/","label":"Αρχική"},{"path":"/goals","label":"Στόχοι SDGs"}],"post":[{"path":"/","label":"Αρχική"},{"path":"/news","label":"Νέα"}]},"config_form_library_src":"https://open-sdg.org/open-sdg-config-form/2.4.0/bundle.js","cookie_consent_form":{"enabled":false},"country":{"name":"Πανεπιστήμιο Θεσσαλίας","adjective":"Ιδρυματικό"},"create_goals":{"previous_next_links":true,"goals":[{"goal":3,"heading":"SDG 3 – Καλή Υγεία και Ευημερία","content_heading":"Συμβολή του Πανεπιστημίου","content":"Το Πανεπιστήμιο Θεσσαλίας συμβάλλει στον Στόχο 3 μέσα από την εκπαίδευση, την έρευνα και τις δράσεις που σχετίζονται με την υγεία, την ευημερία, την πρόληψη και τη δημόσια υγεία. Η συμβολή του αποτυπώνεται μέσα από δείκτες που αφορούν προγράμματα σπουδών επιστημών υγείας, ερευνητικά έργα, συνεργασίες με φορείς, υπηρεσίες φοιτητικής μέριμνας, δράσεις ψυχικής υγείας και πολιτικές πρόληψης."},{"goal":13,"heading":"SDG 13 – Δράση για το Κλίμα","content_heading":"Συμβολή του Πανεπιστημίου","content":"Ο Στόχος 13 αφορά την κλιματική δράση, την περιβαλλοντική υπευθυνότητα και την ανθεκτικότητα απέναντι στις επιπτώσεις της κλιματικής κρίσης. Η συμβολή του Ιδρύματος μπορεί να τεκμηριωθεί μέσα από ερευνητικά έργα, πολιτικές ενεργειακής διαχείρισης, δράσεις περιβαλλοντικής ευαισθητοποίησης, μελέτες για φυσικές καταστροφές και συνεργασίες για την κλιματική ανθεκτικότητα της Θεσσαλίας και της ευρύτερης περιοχής της Μεσογείου."}],"goal_content_heading":"Συμβολή του Πανεπιστημίου"},"create_indicators":{"previous_next_links":true},"create_pages":[{"filename":"","folder":"/goals","layout":"goals","title":"general.goals"},{"filename":"","folder":"/reporting-status","layout":"reportingstatus","title":"status.reporting_status"},{"filename":"","folder":"/search","layout":"search","title":"search.search"}],"custom_css":[],"custom_js":["/assets/js/custom.js"],"data_edit_url":"data","data_fields":{"units":"","series":""},"date_formats":[{"type":"standard","language":"en","format":"%b %d, %Y"}],"disclaimer":{"phase":"Πιλοτική έκδοση","message":"Αναπτυσσόμενη πρόταση για Παρατηρητήριο SDGs. Τα δεδομένα και οι δείκτες είναι ενδεικτικά και υπό επεξεργασία. Η παρούσα έκδοση δεν αποτελεί επίσημο ιστοχώρο του ιδρύματος.","hidden":false},"email_contacts":{"questions":"ikouroutzis@uth.gr","suggestions":"ikouroutzis@uth.gr","functional":"ikouroutzis@uth.gr"},"empty_metadata_placeholder":"","empty_metadata_placeholder_sources":"","environment":"staging","footer_language_toggle":"links","footer_menu":[{"path":"/contact-us","translation_key":"Επικοινωνία"},{"path":"https://el-gr.facebook.com/uth.gr/","translation_key":"Facebook"},{"path":"/about/cookies-and-privacy/","translation_key":"Απόρρητο και cookies"}],"frontpage_cards":[{"title":"Δείκτες και Δεδομένα","content":"Παρακολούθηση της προόδου μέσα από επιλεγμένους ιδρυματικούς δείκτες, γραφήματα, πίνακες και ανοικτά δεδομένα. Η πλατφόρμα μπορεί να υποστηρίξει δεδομένα ανά έτος, Στόχο Βιώσιμης Ανάπτυξης, Σχολή, Τμήμα ή θεματική περιοχή.","button_label":"Προβολή δεικτών","button_link":"goals","rule_color":"#B03931","include":""},{"title":"Πολιτικές και Τεκμηρίωση","content":"Σύνδεση κάθε Στόχου με πολιτικές, δράσεις, αποφάσεις, εκθέσεις και τεκμήρια του Πανεπιστημίου. Η προσέγγιση μετατρέπει τις υπάρχουσες σελίδες πολιτικών σε οργανωμένο σύστημα τεκμηρίωσης και παρακολούθησης.","include":"","button_label":"Δείτε τους στόχους","button_link":"goals","rule_color":"#404041"},{"title":"Στρατηγική και Κοινωνικό Αποτύπωμα","content":"Ανάδειξη της συμβολής του Πανεπιστημίου στη βιωσιμότητα, την κοινωνική ευθύνη, την καινοτομία και την περιφερειακή ανάπτυξη. Το Παρατηρητήριο μπορεί να λειτουργήσει ως εργαλείο στρατηγικού σχεδιασμού, δημόσιας λογοδοσίας και διεθνούς προβολής.","include":"","button_label":"Κατάσταση αναφοράς","button_link":"reporting-status","rule_color":"#B03931"}],"frontpage_goals_grid":{"title":"Οι 17 Στόχοι Βιώσιμης Ανάπτυξης","description":"Επιλέξτε έναν Στόχο για να δείτε σχετικούς δείκτες, πολιτικές, δράσεις και τεκμήρια που αποτυπώνουν τη συμβολή του Πανεπιστημίου."},"frontpage_introduction_banner":{"title":"Παρατηρητήριο Βιώσιμης Ανάπτυξης Πανεπιστημίου Θεσσαλίας","description":"Δείκτες, πολιτικές και τεκμηρίωση της συμβολής του Πανεπιστημίου στους Στόχους Βιώσιμης Ανάπτυξης του Ο.Η.Ε."},"goal_image_base":"https://open-sdg.org/sdg-translations/assets/img/goals","goal_image_extension":"png","goals_page":{"title":"Οι 17 Στόχοι Βιώσιμης Ανάπτυξης","description":"Περιηγηθείτε στους 17 Στόχους Βιώσιμης Ανάπτυξης και δείτε τους σχετικούς δείκτες, πολιτικές, δράσεις και τεκμήρια που συνδέονται με τη συμβολή του Πανεπιστημίου Θεσσαλίας."},"graph_color_headline":"#B03931","graph_color_headline_high_contrast":"#404041","graph_color_list":[],"graph_color_number":0,"graph_color_set":"accessible","graph_title_from_series":false,"header_language_toggle":"links","hide_empty_metadata":true,"hide_single_series":true,"hide_single_unit":true,"ignored_disaggregations":[],"indicator_config_form":{"enabled":false,"dropdowns":[],"repository_link":"/tree/develop/indicator-config","translation_link":""},"indicator_data_form":{"enabled":false,"repository_link":"/tree/develop/data"},"indicator_metadata_form":{"enabled":false,"dropdowns":[],"repository_link":"/tree/develop/meta","translation_link":"","language":"","scopes":["national","global"],"exclude_fields":[],"translated":false},"indicator_tabs":{"tab_1":"chart","tab_2":"table","tab_3":"map","tab_4":"embed"},"languages":["en"],"languages_numbers":[],"languages_public":[],"logos":[],"map_layers":[],"map_options":{"disaggregation_controls":false,"minZoom":5,"maxZoom":10,"tileURL":"","tileOptions":{"id":"","accessToken":"","attribution":""},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":""}},"menu":[{"path":"/","translation_key":"Αρχική","dropdown":[]},{"path":"/goals","translation_key":"Στόχοι SDGs","dropdown":[]},{"path":"/reporting-status","translation_key":"Κατάσταση δεικτών","dropdown":[]},{"path":"/news","translation_key":"Νέα","dropdown":[]},{"path":"/faq","translation_key":"Συχνές ερωτήσεις","dropdown":[]},{"path":"/about","translation_key":"Σχετικά","dropdown":[]}],"meta_tags":[],"metadata_edit_url":"metadata","metadata_tabs":[{"scope":"national","title":"indicator.national_metadata","description":"indicator.national_metadata_blurb"},{"scope":"global","title":"indicator.global_metadata","description":"indicator.global_metadata_blurb"},{"scope":"sources","title":"indicator.sources","description":""}],"news":{"category_links":false},"observation_attributes":[],"progress_status":{"status_heading":"Πρόοδος ως προς τον στόχο","status_types":[],"status_help":"Η ένδειξη προόδου αποτυπώνει τη συνολική κατεύθυνση εξέλιξης ενός δείκτη σε σχέση με τον επιδιωκόμενο στόχο ή τη θεσμική προτεραιότητα."},"progressive_web_app":{"name":"UTH SDG Observatory","short_name":"UTH SDGs"},"proxy_indicators":{"label":"Ιδρυματικός δείκτης","description":"Ο δείκτης έχει προσαρμοστεί στο πανεπιστημιακό πλαίσιο και χρησιμοποιείται για την αποτύπωση πολιτικών, δράσεων ή δεδομένων που συνδέονται με τη συμβολή του Πανεπιστημίου στους Στόχους Βιώσιμης Ανάπτυξης."},"remote_data_prefix":"https://sdg-university-demo.github.io/data","reporting_status":{"title":"Κατάσταση τεκμηρίωσης δεικτών","description":"Η ενότητα παρουσιάζει την κατάσταση διαθεσιμότητας και τεκμηρίωσης των δεικτών που συνδέονται με τους Στόχους Βιώσιμης Ανάπτυξης. Κάθε δείκτης μπορεί να βρίσκεται σε διαφορετικό στάδιο ωρίμανσης, ανάλογα με τη διαθεσιμότητα δεδομένων, μεταδεδομένων και θεσμικών πηγών τεκμηρίωσης.","disaggregation_tabs":false,"status_types":[{"value":"complete","label":"Διαθέσιμα δεδομένα και τεκμηρίωση","hide_on_goal_pages":false},{"value":"inprogress","label":"Σε εξέλιξη συλλογή δεδομένων","hide_on_goal_pages":false},{"value":"notstarted","label":"Υπό ανάπτυξη / αναζήτηση πηγών","hide_on_goal_pages":false},{"label":"Μη εφαρμόσιμο / υπό αξιολόγηση","value":"notapplicable"}],"disaggregation_indicator_count_label":"δείκτες"},"repository_url_data":"https://github.com/sdg-university-demo/data","repository_url_site":"https://github.com/sdg-university-demo/site","search_index_boost":[{"field":"title","boost":10},{"field":"id","boost":5},{"field":"content","boost":2}],"search_index_extra_fields":["data_keywords"],"site_config_form":{"enabled":true,"dropdowns":[],"repository_link":"https://github.com/sdg-university-demo/site/tree/develop/_data","translation_link":"","config_folder":"_data","github_repo":"site","github_owner":"sdg-university-demo"},"time_series_attributes":[{"field":"COMMENT_TS","label":"indicator.footnote"},{"field":"DATA_LAST_UPDATE","label":"metadata_fields.national_data_update_url"}],"x_axis_label":"Έτος"};
       opensdg.configForm.repoUrl = "https://github.com/sdg-university-demo/site";
-      opensdg.configForm.configFolder = null;
+      opensdg.configForm.configFolder = "_data";
       opensdg.configForm.githubClientId = null;
       opensdg.configForm.githubProxyUrl = null;
-      opensdg.configForm.githubRepo = null;
-      opensdg.configForm.githubOwner = null;
+      opensdg.configForm.githubRepo = "site";
+      opensdg.configForm.githubOwner = "sdg-university-demo";
     
   </script>
   
@@ -2940,21 +2910,16 @@ data-event-label="high"
                         </li>
                         
                         <li>
-                            <a href="/site/contact-us">Contact us</a>
+                            <a href="/site/contact-us">Επικοινωνία</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
+                            <a href="https://el-gr.facebook.com/uth.gr/" target="_blank">Facebook</a>
                             
                         </li>
                         <li>
-                            
-                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
-                            
-                        </li>
-                        <li>
-                            <a href="/site/about/cookies-and-privacy/">Cookies</a>
+                            <a href="/site/about/cookies-and-privacy/">Απόρρητο και cookies</a>
                             
                         </li>
                         
@@ -2996,12 +2961,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/site/assets/js/sdg.js?v=20260707122907'></script>
+<script src='/site/assets/js/sdg.js?v=20260707164013'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20260707122907"></script><script>
+    <script src="/site/assets/js/custom.js?v=20260707164013"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

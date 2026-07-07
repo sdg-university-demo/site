@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/en',
+  remoteDataBaseUrl: 'https://sdg-university-demo.github.io/data/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -142,7 +142,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20260707122907">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20260707164013">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -179,9 +179,9 @@ layout-reportingstatus
     
 <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Πιλοτική έκδοση</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Αναπτυσσόμενη πρόταση για Παρατηρητήριο SDGs. Τα δεδομένα και οι δείκτες είναι ενδεικτικά και υπό επεξεργασία. Η παρούσα έκδοση δεν αποτελεί επίσημο ιστοχώρο του ιδρύματος.
     
   </div>
 </div>
@@ -200,17 +200,17 @@ layout-reportingstatus
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/site/">Home</a>
+    <a class="nav-link" href="/site/">Αρχική</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/goals">Goals</a>
+    <a class="nav-link" href="/site/goals">Στόχοι SDGs</a>
 </li><li class="nav-item active">
-    <a class="nav-link" href="/site/reporting-status">Reporting Status</a>
+    <a class="nav-link" href="/site/reporting-status">Κατάσταση δεικτών</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/news">Updates</a>
+    <a class="nav-link" href="/site/news">Νέα</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/faq">FAQ</a>
+    <a class="nav-link" href="/site/faq">Συχνές ερωτήσεις</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/about">About us</a>
+    <a class="nav-link" href="/site/about">Σχετικά</a>
 </li></ul>
     
                 </div>
@@ -228,37 +228,7 @@ layout-reportingstatus
 </form>
 
                 </div>
-                <div class="header-toggles d-flex">
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown  dropdown">
-    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa fa-globe"></i>
-      English
-    </button>
-    <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/site/es/reporting-status/">
-              Español
-            </a>
-          </li></ul>
-  </div>
-</div>
-
-
-
-                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
-    <i class="fa fa-globe language-toggle-globe-links"></i>
-    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-es list-inline-item">
-            <a class="language-toggle-link" href="/site/es/reporting-status/">
-                Español
-            </a>
-        </li></ul>
-</div></span><a title="Enable high contrast" aria-label="Enable high contrast"
+                <div class="header-toggles d-flex"><a title="Enable high contrast" aria-label="Enable high contrast"
     data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -293,13 +263,13 @@ data-event-label="high"
 
   <h1>
   
-    Reporting status
+    Κατάσταση τεκμηρίωσης δεικτών
   
 </h1>
 
 
 <div class="reporting-status-description">
-  <p>Reporting status provides an overview of how much Sustainable Development Goal (SDG) data Australia reports.</p>
+  <p>Η ενότητα παρουσιάζει την κατάσταση διαθεσιμότητας και τεκμηρίωσης των δεικτών που συνδέονται με τους Στόχους Βιώσιμης Ανάπτυξης. Κάθε δείκτης μπορεί να βρίσκεται σε διαφορετικό στάδιο ωρίμανσης, ανάλογα με τη διαθεσιμότητα δεδομένων, μεταδεδομένων και θεσμικών πηγών τεκμηρίωσης.</p>
 
 </div>
 
@@ -312,7 +282,7 @@ data-event-label="high"
   <div class="goal goal-overall">
     
     <div class="frame goal-tiles">
-        <img src="/site/assets/img/SDG Wheel_Transparent-01.png" alt="Sustainable Development Goals" width="100" height="100" class="goal-icon-image goal-icon-image-"/>
+        <img src="/site/assets/img/SDG Wheel_Transparent-01.png" alt="Sustainable Development Goals" width="100" height="100" class="goal-icon-image goal-icon-image-png"/>
     </div>
     
     <div class="details">
@@ -325,8 +295,9 @@ data-event-label="high"
             <div class="statuses">
             
             
+            
             <div>
-                <span class="status notstarted"><span class="status-inner">250</span></span><strong>No data available</strong><span class="value">100%</span>
+                <span class="status notstarted"><span class="status-inner">250</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
             </div>
             
             <br style="clear:both;">
@@ -338,7 +309,8 @@ data-event-label="high"
             
             
             
-            <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+            
+            <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
             
             </div>
         
@@ -348,7 +320,7 @@ data-event-label="high"
   <h2>Status by goal</h2><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/1/" title="View targets and indicators for Goal 1" aria-label="View targets and indicators for Goal 1">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/1.png" alt="No poverty - Goal 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/1.png" alt="No poverty - Goal 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -361,8 +333,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -374,7 +347,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -384,7 +358,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/2/" title="View targets and indicators for Goal 2" aria-label="View targets and indicators for Goal 2">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/2.png" alt="Zero hunger - Goal 2" width="100" height="100" class="goal-icon-2 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/2.png" alt="Zero hunger - Goal 2" width="100" height="100" class="goal-icon-2 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -397,8 +371,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">15</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">15</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -410,7 +385,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -420,7 +396,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/3/" title="View targets and indicators for Goal 3" aria-label="View targets and indicators for Goal 3">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/3.png" alt="Good health and well-being - Goal 3" width="100" height="100" class="goal-icon-3 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/3.png" alt="Good health and well-being - Goal 3" width="100" height="100" class="goal-icon-3 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -433,8 +409,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">28</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">28</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -446,7 +423,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -456,7 +434,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/4/" title="View targets and indicators for Goal 4" aria-label="View targets and indicators for Goal 4">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/4.png" alt="Quality education - Goal 4" width="100" height="100" class="goal-icon-4 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/4.png" alt="Quality education - Goal 4" width="100" height="100" class="goal-icon-4 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -469,8 +447,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -482,7 +461,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -492,7 +472,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/5/" title="View targets and indicators for Goal 5" aria-label="View targets and indicators for Goal 5">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/5.png" alt="Gender equality - Goal 5" width="100" height="100" class="goal-icon-5 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/5.png" alt="Gender equality - Goal 5" width="100" height="100" class="goal-icon-5 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -505,8 +485,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -518,7 +499,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -528,7 +510,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/6/" title="View targets and indicators for Goal 6" aria-label="View targets and indicators for Goal 6">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/6.png" alt="Clean water and sanitation - Goal 6" width="100" height="100" class="goal-icon-6 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/6.png" alt="Clean water and sanitation - Goal 6" width="100" height="100" class="goal-icon-6 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -541,8 +523,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">11</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">11</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -554,7 +537,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -564,7 +548,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/7/" title="View targets and indicators for Goal 7" aria-label="View targets and indicators for Goal 7">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/7.png" alt="Affordable and clean energy - Goal 7" width="100" height="100" class="goal-icon-7 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/7.png" alt="Affordable and clean energy - Goal 7" width="100" height="100" class="goal-icon-7 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -577,8 +561,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">6</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">6</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -590,7 +575,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -600,7 +586,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/8/" title="View targets and indicators for Goal 8" aria-label="View targets and indicators for Goal 8">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/8.png" alt="Decent work and economic growth - Goal 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/8.png" alt="Decent work and economic growth - Goal 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -613,8 +599,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">17</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">17</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -626,7 +613,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -636,7 +624,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/9/" title="View targets and indicators for Goal 9" aria-label="View targets and indicators for Goal 9">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/9.png" alt="Industry, innovation and infrastructure - Goal 9" width="100" height="100" class="goal-icon-9 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/9.png" alt="Industry, innovation and infrastructure - Goal 9" width="100" height="100" class="goal-icon-9 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -649,8 +637,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -662,7 +651,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -672,7 +662,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/10/" title="View targets and indicators for Goal 10" aria-label="View targets and indicators for Goal 10">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/10.png" alt="Reduced inequalities - Goal 10" width="100" height="100" class="goal-icon-10 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/10.png" alt="Reduced inequalities - Goal 10" width="100" height="100" class="goal-icon-10 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -685,8 +675,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -698,7 +689,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -708,7 +700,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/11/" title="View targets and indicators for Goal 11" aria-label="View targets and indicators for Goal 11">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/11.png" alt="Sustainable cities and communities - Goal 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/11.png" alt="Sustainable cities and communities - Goal 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -721,8 +713,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">15</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">15</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -734,7 +727,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -744,7 +738,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/12/" title="View targets and indicators for Goal 12" aria-label="View targets and indicators for Goal 12">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/12.png" alt="Responsible consumption and production - Goal 12" width="100" height="100" class="goal-icon-12 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/12.png" alt="Responsible consumption and production - Goal 12" width="100" height="100" class="goal-icon-12 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -757,8 +751,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -770,7 +765,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -780,7 +776,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/13/" title="View targets and indicators for Goal 13" aria-label="View targets and indicators for Goal 13">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/13.png" alt="Climate action - Goal 13" width="100" height="100" class="goal-icon-13 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/13.png" alt="Climate action - Goal 13" width="100" height="100" class="goal-icon-13 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -793,8 +789,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">8</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">8</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -806,7 +803,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -816,7 +814,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/14/" title="View targets and indicators for Goal 14" aria-label="View targets and indicators for Goal 14">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/14.png" alt="Life below water - Goal 14" width="100" height="100" class="goal-icon-14 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/14.png" alt="Life below water - Goal 14" width="100" height="100" class="goal-icon-14 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -829,8 +827,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">10</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">10</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -842,7 +841,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -852,7 +852,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/15/" title="View targets and indicators for Goal 15" aria-label="View targets and indicators for Goal 15">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/15.png" alt="Life on land - Goal 15" width="100" height="100" class="goal-icon-15 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/15.png" alt="Life on land - Goal 15" width="100" height="100" class="goal-icon-15 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -865,8 +865,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -878,7 +879,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -888,7 +890,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/16/" title="View targets and indicators for Goal 16" aria-label="View targets and indicators for Goal 16">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/16.png" alt="Peace, justice and strong institutions - Goal 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/16.png" alt="Peace, justice and strong institutions - Goal 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -901,8 +903,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -914,7 +917,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -924,7 +928,7 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/17/" title="View targets and indicators for Goal 17" aria-label="View targets and indicators for Goal 17">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/17.png" alt="Partnerships for the goals - Goal 17" width="100" height="100" class="goal-icon-17 goal-icon-image goal-icon-image-"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/17.png" alt="Partnerships for the goals - Goal 17" width="100" height="100" class="goal-icon-17 goal-icon-image goal-icon-image-png"/>
         </a>
     </div>
     <div class="details">
@@ -937,8 +941,9 @@ data-event-label="high"
             <div class="statuses">
                 
                 
+                
                 <div>
-                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>No data available</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>Υπό ανάπτυξη / αναζήτηση πηγών</strong><span class="value">100%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -950,7 +955,8 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="No data available: 100%"></span>
+                
+                <span class="notstarted" style="width:100.0%" title="Υπό ανάπτυξη / αναζήτηση πηγών: 100%"></span>
                 
                 </div>
         
@@ -980,21 +986,16 @@ data-event-label="high"
                         </li>
                         
                         <li>
-                            <a href="/site/contact-us">Contact us</a>
+                            <a href="/site/contact-us">Επικοινωνία</a>
                             
                         </li>
                         <li>
                             
-                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
+                            <a href="https://el-gr.facebook.com/uth.gr/" target="_blank">Facebook</a>
                             
                         </li>
                         <li>
-                            
-                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
-                            
-                        </li>
-                        <li>
-                            <a href="/site/about/cookies-and-privacy/">Cookies</a>
+                            <a href="/site/about/cookies-and-privacy/">Απόρρητο και cookies</a>
                             
                         </li>
                         
@@ -1036,12 +1037,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/site/assets/js/sdg.js?v=20260707122907'></script>
+<script src='/site/assets/js/sdg.js?v=20260707164013'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20260707122907"></script><script>
+    <script src="/site/assets/js/custom.js?v=20260707164013"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
