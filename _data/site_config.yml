@@ -77,7 +77,7 @@ date_formats:
     language: en
     format: '%b %d, %Y'
 disclaimer:
-  phase: Πιλοτική έκδοση
+  phase: ΠΙΛΟΤΙΚΗ ΕΚΔΟΣΗ
   message: >-
     Αναπτυσσόμενη πρόταση για Παρατηρητήριο SDGs. Τα δεδομένα και οι δείκτες
     είναι ενδεικτικά και υπό επεξεργασία. Η παρούσα έκδοση δεν αποτελεί επίσημο
@@ -185,7 +185,10 @@ languages:
   - en
 languages_numbers: []
 languages_public: []
-logos: []
+logos:
+  - language: en
+    src: https://sdg-university-demo.github.io/site/assets/img/uth-logo-el.png
+    alt: Πανεπιστήμιο Θεσσαλίας
 map_layers: []
 map_options:
   disaggregation_controls: false
