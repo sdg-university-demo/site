@@ -185,7 +185,8 @@ indicator_tabs:
   tab_3: map
   tab_4: embed
 languages:
-  - el, en
+  - el
+  - en
 languages_numbers: []
 languages_public: []
 logos: []
@@ -272,7 +273,7 @@ proxy_indicators:
     Ο δείκτης έχει προσαρμοστεί στο πανεπιστημιακό πλαίσιο και χρησιμοποιείται
     για την αποτύπωση πολιτικών, δράσεων ή δεδομένων που συνδέονται με τη
     συμβολή του Πανεπιστημίου στους Στόχους Βιώσιμης Ανάπτυξης.
-remote_data_prefix: https://sdg-university-demo.github.io/data/
+remote_data_prefix: https://sdg-university-demo.github.io/data
 reporting_status:
   title: Κατάσταση τεκμηρίωσης δεικτών
   description: >-
