@@ -6,30 +6,52 @@ analytics:
 breadcrumbs:
   goal:
     - path: /
-      label: general.home
+      label: Αρχική
     - path: /goals
-      label: general.goals
+      label: Στόχοι SDGs
   indicator:
     - path: /
-      label: general.home
+      label: Αρχική
     - path: /goals
-      label: general.goals
+      label: Στόχοι SDGs
   post:
     - path: /
-      label: general.home
+      label: Αρχική
     - path: /news
-      label: menu.updates
+      label: Νέα
 config_form_library_src: https://open-sdg.org/open-sdg-config-form/2.4.0/bundle.js
 cookie_consent_form:
   enabled: false
 country:
-  name: Australia
-  adjective: Australian
+  name: Πανεπιστήμιο Θεσσαλίας
+  adjective: Ιδρυματικό
 create_goals:
-  previous_next_links: false
-  goals: []
+  previous_next_links: true
+  goals:
+    - goal: 3
+      heading: SDG 3 – Καλή Υγεία και Ευημερία
+      content_heading: Συμβολή του Πανεπιστημίου
+      content: >-
+        Το Πανεπιστήμιο Θεσσαλίας συμβάλλει στον Στόχο 3 μέσα από την
+        εκπαίδευση, την έρευνα και τις δράσεις που σχετίζονται με την υγεία, την
+        ευημερία, την πρόληψη και τη δημόσια υγεία. Η συμβολή του αποτυπώνεται
+        μέσα από δείκτες που αφορούν προγράμματα σπουδών επιστημών υγείας,
+        ερευνητικά έργα, συνεργασίες με φορείς, υπηρεσίες φοιτητικής μέριμνας,
+        δράσεις ψυχικής υγείας και πολιτικές πρόληψης.
+    - goal: 13
+      heading: SDG 13 – Δράση για το Κλίμα
+      content_heading: Συμβολή του Πανεπιστημίου
+      content: >-
+        Ο Στόχος 13 αφορά την κλιματική δράση, την περιβαλλοντική υπευθυνότητα
+        και την ανθεκτικότητα απέναντι στις επιπτώσεις της κλιματικής κρίσης. Η
+        συμβολή του Ιδρύματος μπορεί να τεκμηριωθεί μέσα από ερευνητικά έργα,
+        πολιτικές ενεργειακής διαχείρισης, δράσεις περιβαλλοντικής
+        ευαισθητοποίησης, μελέτες για φυσικές καταστροφές και συνεργασίες για
+        την κλιματική ανθεκτικότητα της Θεσσαλίας και της ευρύτερης περιοχής της
+        Μεσογείου.
+  goal_content_heading: Συμβολή του Πανεπιστημίου
 create_indicators:
-  previous_next_links: false
+  previous_next_links: true
 create_pages:
   - filename: ''
     folder: /goals
@@ -50,83 +72,104 @@ data_edit_url: data
 data_fields:
   units: ''
   series: ''
-date_formats: []
+date_formats:
+  - type: standard
+    language: el
+    format: '%d/%m/%Y'
+  - type: standard
+    language: en
+    format: '%b %d, %Y'
 disclaimer:
-  phase: ''
-  message: ''
+  phase: Πιλοτική έκδοση
+  message: >-
+    Αναπτυσσόμενη πρόταση για Παρατηρητήριο SDGs. Τα δεδομένα και οι δείκτες
+    είναι ενδεικτικά και υπό επεξεργασία. Η παρούσα έκδοση δεν αποτελεί επίσημο
+    ιστοχώρο του ιδρύματος.
   hidden: false
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: ikouroutzis@uth.gr
+  suggestions: ikouroutzis@uth.gr
+  functional: ikouroutzis@uth.gr
 empty_metadata_placeholder: ''
 empty_metadata_placeholder_sources: ''
 environment: staging
-footer_language_toggle: none
+footer_language_toggle: links
 footer_menu:
   - path: /contact-us
-    translation_key: menu.contact_us
-  - path: https://twitter.com/MyTwitterAccount
-    translation_key: general.twitter
-  - path: https://facebook.com/MyFacebookAccount
-    translation_key: general.facebook
+    translation_key: Επικοινωνία
+  - path: https://el-gr.facebook.com/uth.gr/
+    translation_key: Facebook
   - path: /about/cookies-and-privacy/
-    translation_key: menu.cookies
+    translation_key: Απόρρητο και cookies
 frontpage_cards:
-  - title: frontpage.download_all
-    content: ''
-    include: components/download-all-data.html
-    button_label: ''
-    button_link: ''
-    rule_color: ''
-  - title: Lorem ipsum
-    content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-      cursus est sed dapibus.
+  - title: Δείκτες και Δεδομένα
+    content: >-
+      Παρακολούθηση της προόδου μέσα από επιλεγμένους ιδρυματικούς δείκτες,
+      γραφήματα, πίνακες και ανοικτά δεδομένα. Η πλατφόρμα μπορεί να υποστηρίξει
+      δεδομένα ανά έτος, Στόχο Βιώσιμης Ανάπτυξης, Σχολή, Τμήμα ή θεματική
+      περιοχή.
+    button_label: Προβολή δεικτών
+    button_link: goals
+    rule_color: '#B03931'
     include: ''
-    button_label: Read more
-    button_link: https://example.com
-    rule_color: ''
-  - title: Nam vestibulum
-    content: |
-      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
+  - title: Πολιτικές και Τεκμηρίωση
+    content: >-
+      Σύνδεση κάθε Στόχου με πολιτικές, δράσεις, αποφάσεις, εκθέσεις και
+      τεκμήρια του Πανεπιστημίου. Η προσέγγιση μετατρέπει τις υπάρχουσες σελίδες
+      πολιτικών σε οργανωμένο σύστημα τεκμηρίωσης και παρακολούθησης.
     include: ''
-    button_label: Read more
-    button_link: https://example.com
-    rule_color: ''
+    button_label: Δείτε τους στόχους
+    button_link: goals
+    rule_color: '#404041'
+  - title: Στρατηγική και Κοινωνικό Αποτύπωμα
+    content: >-
+      Ανάδειξη της συμβολής του Πανεπιστημίου στη βιωσιμότητα, την κοινωνική
+      ευθύνη, την καινοτομία και την περιφερειακή ανάπτυξη. Το Παρατηρητήριο
+      μπορεί να λειτουργήσει ως εργαλείο στρατηγικού σχεδιασμού, δημόσιας
+      λογοδοσίας και διεθνούς προβολής.
+    include: ''
+    button_label: Κατάσταση αναφοράς
+    button_link: reporting-status
+    rule_color: '#B03931'
 frontpage_goals_grid:
-  title: frontpage.heading_short
-  description: frontpage.instructions_shorter
+  title: Οι 17 Στόχοι Βιώσιμης Ανάπτυξης
+  description: >-
+    Επιλέξτε έναν Στόχο για να δείτε σχετικούς δείκτες, πολιτικές, δράσεις και
+    τεκμήρια που αποτυπώνουν τη συμβολή του Πανεπιστημίου.
 frontpage_introduction_banner:
-  title: frontpage.intro_title
-  description: frontpage.intro_body
+  title: Παρατηρητήριο Βιώσιμης Ανάπτυξης Πανεπιστημίου Θεσσαλίας
+  description: >-
+    Δείκτες, πολιτικές και τεκμηρίωση της συμβολής του Πανεπιστημίου στους
+    Στόχους Βιώσιμης Ανάπτυξης του Ο.Η.Ε.
 goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
-goal_image_extension: ''
+goal_image_extension: png
 goals_page:
-  title: general.goals
-  description: frontpage.instructions_shorter
-graph_color_headline: '#004466'
-graph_color_headline_high_contrast: '#55a6e5'
+  title: Οι 17 Στόχοι Βιώσιμης Ανάπτυξης
+  description: >-
+    Περιηγηθείτε στους 17 Στόχους Βιώσιμης Ανάπτυξης και δείτε τους σχετικούς
+    δείκτες, πολιτικές, δράσεις και τεκμήρια που συνδέονται με τη συμβολή του
+    Πανεπιστημίου Θεσσαλίας.
+graph_color_headline: '#B03931'
+graph_color_headline_high_contrast: '#404041'
 graph_color_list: []
 graph_color_number: 0
 graph_color_set: accessible
 graph_title_from_series: false
-header_language_toggle: dropdown
+header_language_toggle: links
 hide_empty_metadata: true
 hide_single_series: true
 hide_single_unit: true
 ignored_disaggregations: []
 indicator_config_form:
-  enabled: true
+  enabled: false
   dropdowns: []
   repository_link: /tree/develop/indicator-config
   translation_link: ''
 indicator_data_form:
-  enabled: true
+  enabled: false
   repository_link: /tree/develop/data
 indicator_metadata_form:
-  enabled: true
+  enabled: false
   dropdowns: []
   repository_link: /tree/develop/meta
   translation_link: ''
@@ -137,13 +180,12 @@ indicator_metadata_form:
   exclude_fields: []
   translated: false
 indicator_tabs:
-  tab_1: ''
-  tab_2: ''
-  tab_3: ''
-  tab_4: ''
+  tab_1: chart
+  tab_2: table
+  tab_3: map
+  tab_4: embed
 languages:
-  - en
-  - es
+  - el, en
 languages_numbers: []
 languages_public: []
 logos: []
@@ -179,24 +221,28 @@ map_options:
     dashArray: ''
 menu:
   - path: /
-    translation_key: general.home
+    translation_key: Αρχική
     dropdown: []
   - path: /goals
-    translation_key: general.goals
+    translation_key: Στόχοι SDGs
     dropdown: []
   - path: /reporting-status
-    translation_key: menu.reporting_status
+    translation_key: Κατάσταση δεικτών
     dropdown: []
   - path: /news
-    translation_key: menu.updates
+    translation_key: Νέα
     dropdown: []
   - path: /faq
-    translation_key: menu.faq
+    translation_key: Συχνές ερωτήσεις
     dropdown: []
   - path: /about
-    translation_key: menu.about
+    translation_key: Σχετικά
     dropdown: []
-meta_tags: []
+meta_tags:
+  - name: description
+    content: >-
+      Παρατηρητήριο Βιώσιμης Ανάπτυξης του Πανεπιστημίου Θεσσαλίας με δείκτες,
+      πολιτικές, δεδομένα και τεκμηρίωση για τους Στόχους Βιώσιμης Ανάπτυξης.
 metadata_edit_url: metadata
 metadata_tabs:
   - scope: national
@@ -212,37 +258,64 @@ news:
   category_links: false
 observation_attributes: []
 progress_status:
-  status_heading: ''
+  status_heading: Πρόοδος ως προς τον στόχο
   status_types: []
-progressive_web_app: {}
-proxy_indicators: {}
-remote_data_prefix: https://open-sdg.org/open-sdg-data-starter
+  status_help: >-
+    Η ένδειξη προόδου αποτυπώνει τη συνολική κατεύθυνση εξέλιξης ενός δείκτη σε
+    σχέση με τον επιδιωκόμενο στόχο ή τη θεσμική προτεραιότητα.
+progressive_web_app:
+  name: UTH SDG Observatory
+  short_name: UTH SDGs
+proxy_indicators:
+  label: Ιδρυματικός δείκτης
+  description: >-
+    Ο δείκτης έχει προσαρμοστεί στο πανεπιστημιακό πλαίσιο και χρησιμοποιείται
+    για την αποτύπωση πολιτικών, δράσεων ή δεδομένων που συνδέονται με τη
+    συμβολή του Πανεπιστημίου στους Στόχους Βιώσιμης Ανάπτυξης.
+remote_data_prefix: https://sdg-university-demo.github.io/data/
 reporting_status:
-  title: status.reporting_status
-  description: status.description
+  title: Κατάσταση τεκμηρίωσης δεικτών
+  description: >-
+    Η ενότητα παρουσιάζει την κατάσταση διαθεσιμότητας και τεκμηρίωσης των
+    δεικτών που συνδέονται με τους Στόχους Βιώσιμης Ανάπτυξης. Κάθε δείκτης
+    μπορεί να βρίσκεται σε διαφορετικό στάδιο ωρίμανσης, ανάλογα με τη
+    διαθεσιμότητα δεδομένων, μεταδεδομένων και θεσμικών πηγών τεκμηρίωσης.
   disaggregation_tabs: false
   status_types:
     - value: complete
-      label: status.reported_online
+      label: Διαθέσιμα δεδομένα και τεκμηρίωση
+      hide_on_goal_pages: false
+    - value: inprogress
+      label: Σε εξέλιξη συλλογή δεδομένων
       hide_on_goal_pages: false
     - value: notstarted
-      label: status.no_data_available
+      label: Υπό ανάπτυξη / αναζήτηση πηγών
       hide_on_goal_pages: false
-    - value: notapplicable
-      label: status.not_applicable
-      hide_on_goal_pages: false
-repository_url_data: https://github.com/open-sdg/open-sdg-data-starter
-repository_url_site: ''
-search_index_boost: []
-search_index_extra_fields: []
+    - label: Μη εφαρμόσιμο / υπό αξιολόγηση
+      value: notapplicable
+  disaggregation_indicator_count_label: δείκτες
+repository_url_data: https://github.com/sdg-university-demo/data
+repository_url_site: https://github.com/sdg-university-demo/site
+search_index_boost:
+  - field: title
+    boost: 10
+  - field: id
+    boost: 5
+  - field: content
+    boost: 2
+search_index_extra_fields:
+  - data_keywords
 site_config_form:
   enabled: true
   dropdowns: []
-  repository_link: /tree/develop/_data
+  repository_link: https://github.com/sdg-university-demo/site/tree/develop/_data
   translation_link: ''
+  config_folder: _data
+  github_repo: site
+  github_owner: sdg-university-demo
 time_series_attributes:
   - field: COMMENT_TS
     label: indicator.footnote
   - field: DATA_LAST_UPDATE
     label: metadata_fields.national_data_update_url
-x_axis_label: ''
+x_axis_label: Έτος
