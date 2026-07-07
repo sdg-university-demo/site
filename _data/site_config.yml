@@ -235,11 +235,7 @@ menu:
   - path: /about
     translation_key: Σχετικά
     dropdown: []
-meta_tags:
-  - name: description
-    content: >-
-      Παρατηρητήριο Βιώσιμης Ανάπτυξης του Πανεπιστημίου Θεσσαλίας με δείκτες,
-      πολιτικές, δεδομένα και τεκμηρίωση για τους Στόχους Βιώσιμης Ανάπτυξης.
+meta_tags: []
 metadata_edit_url: metadata
 metadata_tabs:
   - scope: national
