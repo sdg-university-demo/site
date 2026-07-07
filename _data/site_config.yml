@@ -74,9 +74,6 @@ data_fields:
   series: ''
 date_formats:
   - type: standard
-    language: el
-    format: '%d/%m/%Y'
-  - type: standard
     language: en
     format: '%b %d, %Y'
 disclaimer:
@@ -185,7 +182,6 @@ indicator_tabs:
   tab_3: map
   tab_4: embed
 languages:
-  - el
   - en
 languages_numbers: []
 languages_public: []
